@@ -116,7 +116,7 @@ btn.addEventListener("click", function() {
         
         console.log("Everything went trough succesfully");
         
-        var birthdate = "2000-02-22";
+        var birthdate = yearInput.value + "-" + monthInput.value + "-" + dayInput.value;
 
         var birthdateparts = birthdate.split("-");
         var birthyear = parseInt(birthdateparts[0]);
