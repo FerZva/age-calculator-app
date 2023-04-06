@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Regular.ttf);
+}*/
+body {
+  background-color: hsl(0, 0%, 94%);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 840px;
+  height: 655px;
+  padding: 60px;
+}
+
+main {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 220px;
+}
+@media screen and (max-width: 700px) {
+  main {
+    width: 375px;
+    height: auto;
+    border-bottom-right-radius: 150px;
+  }
+}
+
+main .day-input-section-container .day-input-section-container_form {
+  display: flex;
+}
+main .day-input-section-container .day-input-section-container_form_day-container_birth-input {
+  padding: 12px 20px;
+  width: 150px;
+  font-size: 30px;
+  border-radius: 9px;
+  font-family: "Poppins", sans-serif;
+  margin-right: 33px;
+  border: 0.5px solid hsl(0, 0%, 8%);
+}
+main .day-input-section-container .day-input-section-container_form_day-container_birth-input:focus {
+  outline: none;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+@media screen and (max-width: 700px) {
+  main .day-input-section-container .day-input-section-container_form_day-container_birth-input {
+    font-size: 15px;
+    margin-right: 10px;
+    width: 80px;
+  }
+}
+main .day-input-section-container .day-input-section-container_form_day-container_day-error-label, main .day-input-section-container .day-input-section-container_form_day-container_month-error-label, main .day-input-section-container .day-input-section-container_form_day-container_year-error-label {
+  display: block;
+  margin: 10px 0px;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+}
+@media screen and (max-width: 700px) {
+  main .day-input-section-container .day-input-section-container_form_day-container_day-error-label, main .day-input-section-container .day-input-section-container_form_day-container_month-error-label, main .day-input-section-container .day-input-section-container_form_day-container_year-error-label {
+    font-size: 15px;
+  }
+}
+main .day-input-section-container .day-input-section-container_form_day-container_day-label, main .day-input-section-container .day-input-section-container_form_day-container_month-label, main .day-input-section-container .day-input-section-container_form_day-container_year-label {
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  color: hsl(0, 1%, 44%);
+}
+
+main .calculator-button-container {
+  height: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .calculator-button-container_line {
+  background-color: hsl(0, 0%, 86%);
+  height: 0.2px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  width: 100%;
+  z-index: 1;
+}
+main .calculator-button-container_btn {
+  padding: 10px;
+  border-radius: 50px;
+  z-index: 2;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  margin-left: 90%;
+}
+main .calculator-button-container_btn:hover {
+  transition: 0.2s ease all;
+  background-color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  main .calculator-button-container_btn {
+    margin-left: 0;
+  }
+}
+
+main .number-results-container {
+  font-size: 70px;
+  font-style: italic;
+  font-weight: 800;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .number-results-container div {
+  width: 100%;
+  display: flex;
+}
+main .number-results-container_txt {
+  color: hsl(259, 100%, 65%);
+}
+@media screen and (max-width: 700px) {
+  main .number-results-container {
+    font-size: 45px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

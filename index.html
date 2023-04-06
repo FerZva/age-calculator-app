@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="javascript/main.js" defer></script>
   
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -15,23 +17,56 @@
   </style>
 </head>
 <body>
+  <main>
 
-  Day
-  DD
+    <section class="day-input-section-container">
+      <form action="" class="day-input-section-container_form">
 
-  Month
-  MM
+        <div class="day-input-section-container_form_day-container">
+          <label for="Day" class="day-input-section-container_form_day-container_day-label">DAY</label>
+          <input type="text" maxlength="2" placeholder="DD" id="day-input-section-container_form_day-container_day-input"  class="day-input-section-container_form_day-container_day-input day-input-section-container_form_day-container_birth-input">
+          <label for="Day" class="day-input-section-container_form_day-container_day-error-label" id="day-input-section-container_form_day-container_day-error-label"></label>
+        </div>
 
-  Year
-  YYYY
+        <div class="day-input-section-container_form_month-container">
+          <label for="Month" class="day-input-section-container_form_day-container_month-label">MONTH</label>
+          <input type="text" placeholder="MM" maxlength="2" id="day-input-section-container_form_day-container_month-input" class="day-input-section-container_form_day-container_month-input day-input-section-container_form_day-container_birth-input">
+          <label for="" class="day-input-section-container_form_day-container_month-error-label" id="day-input-section-container_form_day-container_month-error-label"></label>
+        </div>
 
-  -- years
-  -- months
-  -- days
+        <div class="day-input-section-container_form_year-container">
+          <label for="Year" class="day-input-section-container_form_day-container_year-label">YEAR</label>
+          <input type="text" placeholder="YYYY" maxlength="4" id="day-input-section-container_form_day-container_year-input" class="day-input-section-container_form_day-container_year-input day-input-section-container_form_day-container_birth-input">
+          <label for="" class="day-input-section-container_form_day-container_year-error-label" id="day-input-section-container_form_day-container_year-error-label"></label>
+        </div>
+        
+      </form>
+    </section>
+
+    <section class="calculator-button-container">
+      <div class="calculator-button-container_line"></div>
+        <button class="calculator-button-container_btn" id="calculator-buttton-container_btn"><img src="images/icon-arrow.svg" alt="arrow icon to calculate age" class="calculator-buttton-container_btn_img"></button>
+    </section>
+
+    <section class="number-results-container">
+      <div>
+        <p class="number-results-container_years number-results-container_txt" id="number-results-container_years">--</p><p>&nbsp;years</p>
+      </div>
+      
+      <div>
+          <p class="number-results-container_months number-results-container_txt" id="number-results-container_months">--</p><p>&nbsp;months</p>
+      </div>
+        
+      <div>
+          <p class="number-results-container_days number-results-container_txt" id="number-results-container_days">--</p><p>&nbsp;days</p>
+      </div>
+    </section>
+
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Fernando Zavala</a>.
   </div>
 </body>
 </html>

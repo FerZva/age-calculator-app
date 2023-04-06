@@ -1,0 +1,124 @@
+@use 'variables';
+@use 'default';
+
+main {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 220px;
+
+    @media screen and (max-width: 700px) {
+        width: 375px;
+        height: auto;
+        border-bottom-right-radius: 150px;
+    }
+}
+
+main .day-input-section-container .day-input-section-container_form {
+    display: flex;
+    
+
+    &_day-container {
+
+        &_birth-input {
+            
+            padding: 12px 20px;
+            width: 150px;
+            font-size: 30px;
+            border-radius: 9px;
+            font-family: 'Poppins', sans-serif;
+            margin-right: 33px;
+            border: 0.5px solid variables.$Off-black;
+
+            &:focus{
+                outline: none;
+                border: 1px solid variables.$Purple;
+            }
+
+            @media screen and (max-width: 700px) {
+                font-size: 15px;
+                margin-right: 10px;
+                width: 80px;
+            }
+        }
+
+        &_day-error-label, &_month-error-label, &_year-error-label {
+            display: block;
+            margin: 10px 0px; 
+            font-style: italic;
+            color: variables.$Light-red;
+
+            @media screen and (max-width: 700px) {
+                font-size: 15px;
+            }
+        }
+
+        &_day-label, &_month-label,  &_year-label{
+            display: block;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+            color: variables.$Smokey-grey;
+        }
+    }
+}
+
+main .calculator-button-container {
+    height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_line {
+        background-color: variables.$Light-grey;
+        height: 0.2px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(0deg);
+        width: 100%;
+        z-index: 1;
+    }
+
+    &_btn {
+        padding: 10px;
+        border-radius: 50px;
+        z-index: 2;
+        border: none;
+        background-color: variables.$Purple;
+        margin-left: 90%;
+
+        &:hover {
+            transition: 0.2s ease all;
+            background-color: variables.$Off-black;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 700px) {
+            margin-left: 0;
+        }
+    }
+}
+
+main .number-results-container{
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 800;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        width: 100%;
+        display: flex;
+    }
+
+    &_txt {
+        color: variables.$Purple;
+        
+    }
+
+    @media screen and (max-width: 700px) {
+        font-size: 45px;
+    }
+}
